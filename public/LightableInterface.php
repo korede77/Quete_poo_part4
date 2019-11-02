@@ -1,6 +1,6 @@
 <?php
 interface LightableInterface
 {
-    public function  switchOn() :string ;
-    public  function switchOff() :string ;
+    public function  switchOn() :bool ;
+    public  function switchOff() :bool ;
 }

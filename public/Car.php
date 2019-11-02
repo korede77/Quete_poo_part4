@@ -14,11 +14,11 @@ class Car extends  Vehicle implements LightableInterface
         parent::__construct($color, $nbSeats);
         $this->setEnergy($energy);
     }
-    public function switchOn( ) :string
+    public function switchOn( ) :bool
     {
         return true;
     }
-    public function switchOff():string
+    public function switchOff():bool
     {
         return false;
     }

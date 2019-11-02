@@ -8,7 +8,8 @@ class Bicycle extends Vehicle implements LightableInterface
     {
         // TODO: Implement changeWheel() method.
     }
-    public function switchOn():string
+
+    public function switchOn():bool
     {
         if(parent::setCurrentSpeed($this->currentSpeed) > 10)
         {
@@ -20,7 +21,7 @@ class Bicycle extends Vehicle implements LightableInterface
         }
 
     }
-    public function switchOff(): string
+    public function switchOff(): bool
     {
         return false;
     }
